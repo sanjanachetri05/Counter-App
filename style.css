@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#value {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-decrease { background: #ff4757; color: white; }
+.btn-increase { background: #2ed573; color: white; }
+.btn-reset { background: #2f3542; color: white; }
+
+.btn:hover { opacity: 0.8; transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+/* Visible focus for keyboard users */
+.btn:focus {
+    outline: 3px solid rgba(46, 213, 115, 0.45);
+    outline-offset: 3px;
+}
+
+/* Screen-reader only utility */
+.sr-only {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    border: 0; padding: 0; margin: -1px;
+}

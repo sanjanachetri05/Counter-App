@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Counter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <div id="value" role="status" aria-live="polite" aria-atomic="true">0</div>
+        <p class="sr-only" id="counter-instructions">Keyboard: Up/Down arrows increase or decrease, press R to reset.</p>
+        <div class="button-group">
+            <button type="button" class="btn btn-decrease" aria-label="Decrease counter">Decrease</button>
+            <button type="button" class="btn btn-reset" aria-label="Reset counter">Reset</button>
+            <button type="button" class="btn btn-increase" aria-label="Increase counter">Increase</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
